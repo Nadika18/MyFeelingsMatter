@@ -95,7 +95,7 @@
 		}
 
 		.sidenav button:hover{
-		  color: #f1f1f1;
+		  color: red;
 		}
 
 		.main {
@@ -109,10 +109,86 @@
 		  .sidenav button {font-size: 18px;}
 		}
 </style>
-		<script>
-			$('.carousel').carousel({
-  				interval: 1600
-			});
+<div id="symptoms" class="text-justify overflow-auto>
+	<div><h1 style="{color:red;}">Symptoms</h1></div>
+	
+	<div><dl class="row">
+		<dt class="col-sm-3">Loss of interest</dt>
 
-		</script>
+		<dd class="col-sm-9">Do you find yourself feeling you can’t be bothered with things you used to find interesting or engaging?
+		Depression thrives on cynical or ‘bored’ attitudes to life, and itself generates a sense of meaninglessness. This loss of interest may include loss of sexual interest, which can create strain in relationships, in turn allowing more room for depression.</dd>
+	</dl></div>
+
+	<div><dl class="row">
+		<dt class="col-sm-3">Lethargy or decreased energy</dt>
+
+		<dd class="col-sm-9">Do you often feel unable to get up at the usual time? Or too lethargic to complete routine everyday tasks? Or do you generally find yourself less able to maintain your usual activity levels? Depression may be sapping your energy and taking root as you succumb to lethargy.</dd>
+	</dl></div>
+
+	<div><dl class="row">
+		<dt class="col-sm-3">	Irregular sleep or change in sleep pattern</dt>
+
+		<dd class="col-sm-9">It is very common for depression to have an effect on sleep, leading to insomnia and sleep disruptions like early waking.
+		Sometimes there is a pattern of excessive sleep (hypersomnia). Regular, sound sleep is essential for healthy functioning, and sleep disruption is a particularly debilitating weapon in the depression arsenal</dd>
+	</dl></div>
+
+	<div><dl class="row">	
+		<dt class="col-sm-3">Appetite or weight changes</dt>
+
+
+		<dd class="col-sm-9">Regular healthy eating is essential for general well-being.
+		Loss of appetite and weight loss, or sometimes overeating and weight gain, can be a sign that depression is interfering with the healthy eating habits essential for maintenance of mood levels and general functioning.</dd>
+	</dl></div>
+
+
+	<div><dl class="row">	
+		<dt class="col-sm-3">Increased tearfulness</dt>
+
+		<dd class="col-sm-9">Crying serves a very useful purpose – stress hormones are released through tears.
+		However, if you find yourself crying much more than usual, for no clear reasons, it may be a sign that depression is at work.</dd>
+	</dl></div>
+
+	<div><dl class="row">	
+		<dt class="col-sm-3">Restlessness</dt>
+
+		<dd class="col-sm-9">Do you find it hard to settle down to a task, or to sit still for any length of time? Some people are naturally energetic, but depression can bring a troubling sense of restlessness and inability to focus. Being constantly keyed up and over-alert in this way can be exhausting, in turn decreasing resistance to depression.</dd>
+	</dl></div>
+
+	<div><dl class="row">	
+		<dt class="col-sm-3">Poor concentration and difficulty making decisions</dt>
+
+		<dd class="col-sm-9">Depression is often said to be a problem of disordered thinking, with ‘automatic negative thoughts’ crowding the mind. Poor concentration and/or difficulty solving problems or making decisions can be due to ‘blanking things out’, or may indicate the need to address the thinking habits that are allowing depression a foothold.</dd></dl></div>
+
+	<div><dl class="row">
+		<dt class="col-sm-3">	Hopelessness and pessimism</dt>
+
+		<dd class="col-sm-9">Having a generally pessimistic outlook can feel like the ‘safe’ approach in an uncertain world – “well, at least that way I won’t be disappointed”.
+		However, depression thrives on this negative attitude, increasingly robbing you of hope and leaving its characteristic ’empty’ feeling instead.</dd>
+	</dl></div>
+
+	
+	<div><dl class="row">	
+		<dt class="col-sm-3">Thoughts of death or suicide</dt>
+
+		<dd class="col-sm-9">It is natural that people will think about death on occasions. However, the excessive negativity caused by depression can lead to repetitive, unhelpful dwelling on death. Depression also reduces problem-solving ability and causes increasing ‘tunnel vision’, falsely making suicide seem like a solution to problems. Repeatedly thinking about suicide can be very risky. It should be taken seriously and dealt with promptly.</dd>
+	</dl></div>
+</div>
+
+
+		 
+
+	
+
+<script>
+	$('dl').hide()
+	$('dd').hide()
+		$('#btn1').click(function(){
+			$('.carousel').hide()
+			$('dl').show()
+			$('dd').show()
+			})
+	$('.carousel').carousel({
+  		interval: 1600
+		});
+</script>
 {% endblock content %}
