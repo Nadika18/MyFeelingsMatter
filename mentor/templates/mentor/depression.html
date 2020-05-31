@@ -2,30 +2,32 @@
 {% block content %}
 {%load static%}
 
-
-	
-<div class="main">
-	<div class="sidenav">
+<div class="container">
+<div class="sidenav">
 	<div class="btn-group-vertical btn-group-lg" role="group" aria-label="Basic example">
 		<button type="button" class="btn btn-light" id='btn1'>Symptoms</button>
 		<hr>
-  		<button type="button" class="btn btn-light id="btn2>Mentor me</button>
+  		<button type="button" class="btn btn-light" id="btn2">Mentor me</button>
   		<hr>
-  		<button type="button" class="btn btn-light id="btn3">Motivate me</button>
+  		<button type="button" class="btn btn-light" id="btn3">Motivate me</button>
   		<hr>
   
-	</div>
-	</div>
+	</div>	
+</div>
+<div class="main">
+	
+	
 			<div id="carouselExampleControls" class="carousel slide h-25 w-100"  data-ride="carousel">
 				<style>	
 					.carousel .item {
 					  height: 300px;
+					  left:30%;
 					}
 
 					.item img {
 					    position: absolute;
 					    top: 0;
-					    left: 0;
+					    left: 30%;
 					    min-height: 300px;
 					}
 				</style> 
@@ -53,12 +55,13 @@
 			    	#img{
 			    		height:600px;
 			    		width:1200px;
+			    		left:20%;
 			    	}
 			    </style>
 			  </div>
-			  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-			    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-			    <span class="sr-only">Previous</span>
+			  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev" style="{left:20%;}">
+			    <span class="carousel-control-prev-icon" aria-hidden="true" style="{left:20%;}"></span>
+			    <span class="sr-only" style="{left:20%;}">Previous</span>
 			  </a>
 			  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
 			    <span class="carousel-control-next-icon" aria-hidden="true"></span>
@@ -109,7 +112,7 @@
 		  .sidenav button {font-size: 18px;}
 		}
 </style>
-<div id="symptoms" class="text-justify overflow-auto>
+<div id="symptoms" class="text-justify overflow-auto main">
 	<div><h1 style="{color:red;}">Symptoms</h1></div>
 	
 	<div><dl class="row">
@@ -173,6 +176,7 @@
 		<dd class="col-sm-9">It is natural that people will think about death on occasions. However, the excessive negativity caused by depression can lead to repetitive, unhelpful dwelling on death. Depression also reduces problem-solving ability and causes increasing ‘tunnel vision’, falsely making suicide seem like a solution to problems. Repeatedly thinking about suicide can be very risky. It should be taken seriously and dealt with promptly.</dd>
 	</dl></div>
 </div>
+</div>
 
 
 		 
@@ -183,7 +187,7 @@
 	$('dl').hide()
 	$('dd').hide()
 		$('#btn1').click(function(){
-			$('.carousel').hide()
+			$('.carousel').hide();
 			$('dl').show()
 			$('dd').show()
 			})
