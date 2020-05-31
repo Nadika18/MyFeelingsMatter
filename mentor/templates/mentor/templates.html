@@ -19,6 +19,34 @@
   	width: 60%;
   	padding: 10px;
 	}
+	.site-form {
+    margin-top: 10px;
+    padding: 20px;
+	}
+
+	.site-form input, .site-form textarea{
+    display: block;
+    margin: 20px 0 0px 0;
+    padding: 10px;
+	}
+	.errorlist li{
+    padding: 10px;
+    list-style-type: none;
+    border: 1px solid;
+    margin: 10px 0;
+    color: #FF5722
+	}
+
+	.errorlist{
+    padding: 0;
+	}
+
+	.site-form input[type="submit"]{
+    border: 0;
+    font-size: 18px;
+    border-radius: 4px;
+    margin: 5px 0;
+	}
 	</style>
     <title>My Feelings Matter</title>
   </head>
@@ -30,7 +58,7 @@
 				}
 		</style>
   	<nav class="navbar navbar-expand-lg navbar-light bg-light">
-	  <a class="navbar-brand" href="#">My Feelings Matter</a>
+	  <a class="navbar-brand" href="{% url 'mentor-home' %}">My Feelings Matter</a>
 	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 	    <span class="navbar-toggler-icon"></span>
 	  </button>
@@ -38,7 +66,7 @@
 	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
 	    <ul class="navbar-nav mr-auto">
 	      <li class="nav-item active">
-	        <a class="nav-link" href="">Home <span class="sr-only">(current)</span></a>
+	        <a class="nav-link" href="{% url 'mentor-home' %}">Home <span class="sr-only">(current)</span></a>
 	      </li>
 	      <li class="nav-item">
 	        <a class="nav-link" id="smile">Make me Smile</a>
@@ -48,8 +76,8 @@
 	          Consult Doctor
 	        </a>
 	        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-	          <a class="dropdown-item" id="doctor" href="form.html">Dr. Krishbin Paudel</a>
-	          <a class="dropdown-item" id="doctor" href="form.html">Dr. Nadika Poudel</a>
+	          <a class="dropdown-item" id="doctor" href="{%url 'mentor-form'%}">Dr. Krishbin Paudel</a>
+	          <a class="dropdown-item" id="doctor" href="{%url 'mentor-form'%}">Dr. Nadika Poudel</a>
 	          
 	          
 	        </div>

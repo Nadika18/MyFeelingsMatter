@@ -80,7 +80,15 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
-
+# DATABASES = {
+#         'default': {
+#         'ENGINE': 'djongo',
+#         'NAME': 'test',
+#         'HOST': 'mongodb+srv://krispy:NotKrishbin123@m001-nrawn.mongodb.net/test?retryWrites=true&w=majority',
+#         'USER': 'krispy',
+#         'PASSWORD': 'NotKrishbin123',
+#     }
+# }
 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
