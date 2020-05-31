@@ -72,4 +72,21 @@
 			</div>
 			
 		</div>
+		<div class="container" id="cform"> </div>
+		<script>
+			
+			$('#im').hide();
+			$('#doctor').click(function()
+			{
+				$.get('form.html',function(data){
+					$('#cform').html(data);
+				});
+				
+			});
+			$('#smile').click(function(){
+				$('#im').show();
+			});
+			
+
+		</script>
 {% endblock content %}
