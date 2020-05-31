@@ -22,10 +22,10 @@
 	</style>
     <title>My Feelings Matter</title>
   </head>
-  <body>
+  <body style="background-image: url({%static 'images/flower.jpg' %});">
   	<style>
 			body {
-  				background-image: url('flower.jpg');
+  				
   				height:3000px;
 				}
 		</style>
@@ -67,7 +67,7 @@
     
 		        
 		   
-		    <img src='do_what_you_love.jpg' id="im" alt="do what you love"/>
+		    <img src="{% static 'images/do_what_you_love.jpg' %}" id="im" alt="do what you love"/>
 
 		<div class="container" id="cform"> </div>
 		<script>
@@ -83,8 +83,9 @@
 			$('#smile').click(function(){
 				$('#im').show();
 			});
+			{% block javascript %}{% endblock javascript %}
 			
-			{%block javascript%}{%endblock javascript%}
+
 		</script>
 		
   </body>
