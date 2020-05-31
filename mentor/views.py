@@ -18,6 +18,9 @@ def patient_create(request):
 
 def dep(request):
 	return render(request,'mentor/depression.html')
-
+def s(request):
+	return render(request,'mentor/symp.html')
+def v(request):
+	return render(request,'mentor/motivate.html')
 
 # Create your views here.
