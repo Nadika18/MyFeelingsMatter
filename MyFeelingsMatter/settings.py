@@ -81,6 +81,12 @@ DATABASES = {
     }
 }
 # DATABASES = {
+#     'default': {
+#         'ENGINE': 'djongo',
+#         'NAME': 'django',
+#     }
+# }
+# DATABASES = {
 #         'default': {
 #         'ENGINE': 'djongo',
 #         'NAME': 'test',
